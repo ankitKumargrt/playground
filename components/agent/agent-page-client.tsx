@@ -40,7 +40,7 @@ export function AgentPageClient({ initialData }: AgentPageClientProps) {
         mailid: mailId,
       };
       //`${process.env.API_BASE_URL}/agent_page`
-      const res = await fetch(`https://9d1e-2401-4900-1c23-7602-795c-aad5-9ba6-a8a5.ngrok-free.app/playground/${sessionId}`, {
+      const res = await fetch(`https://playground.greenridertech.co.in/playground/${sessionId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -63,7 +63,7 @@ export function AgentPageClient({ initialData }: AgentPageClientProps) {
 
       // Commented out live API call
 
-      const res = await fetch(`${process.env.API_BASE_URL}/${sessionId}`, {
+      const res = await fetch(`https://playground.greenridertech.co.in/playground/${sessionId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...ratings }),

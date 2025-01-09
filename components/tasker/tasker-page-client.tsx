@@ -59,7 +59,7 @@ export function TaskerPageClient({ initialData }: TaskerPageClientProps) {
         },
         mailid: mailId,
       };
-      const res = await fetch(`${process.env.API_BASE_URL}/${sessionId}`, {
+      const res = await fetch(`https://playground.greenridertech.co.in/playground/${sessionId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -92,7 +92,7 @@ export function TaskerPageClient({ initialData }: TaskerPageClientProps) {
       // router.push("/");
 
       // Commented out live API call
-      const res = await fetch(`${process.env.API_BASE_URL}/${sessionId}`, {
+      const res = await fetch(`https://playground.greenridertech.co.in/playground/${sessionId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ratings }),
