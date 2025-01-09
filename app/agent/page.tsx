@@ -1,3 +1,4 @@
+"use client";
 import { AgentPageClient } from "@/components/agent/agent-page-client";
 import type { InitialData } from "@/types/agent";
 import { number, string } from "zod";
