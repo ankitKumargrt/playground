@@ -23,9 +23,8 @@ async function getInitialData(): Promise<InitialData> {
     cache: "no-store",
   });
   if (!response.ok) throw new Error("Failed to fetch initial data");
-
   const data = await response.json();
-
+  console.log(data)
   const { session_id, task, prompt } = data;
   const { description, expected_output } = task;
   return {
