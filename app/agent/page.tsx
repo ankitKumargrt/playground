@@ -19,7 +19,7 @@ import { number, string } from "zod";
 
 // Commented out live API endpoint
 async function getInitialData(): Promise<InitialData> {
-  const response = await fetch(`${process.env.API_BASE_URL}/agent_page`, {
+  const response = await fetch(`https://playground.greenridertech.co.in/agent_page`, {
     cache: "no-store",
   });
   if (!response.ok) throw new Error("Failed to fetch initial data");
